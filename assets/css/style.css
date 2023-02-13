@@ -1,0 +1,740 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+  --fw-800: 800;
+
+  --fs-12: 12px;
+  --fs-14: 14px;
+  --fs-15: 15px;
+  --fs-16: 16px;
+  --fs-17: 17px;
+  --fs-20: 20px;
+  --fs-24: 24px;
+  --fs-40: 40px;
+  --fs-48: 48px;
+  --fs-64: 64px;
+  --fs-80: 80px;
+
+  --text-color-black: #000;
+  --text-color-white: #fff;
+  --text-color-violet-100: #834cc9;
+  --text-color-violet-200: #7643a1;
+  --text-color-violet-300: #7c4fc2;
+  --text-color-violet-400: #6532a6;
+  --text-color-violet-500: #6b2ebb;
+  --text-color-violet-600: #2f2a63;
+  --text-color-violet-700: #500fa2;
+  --text-color-gray-100: #696c74;
+  --text-color-gray-200: #8f939a;
+  --text-color-gray-300: #757981;
+  --text-color-gray-400: #313336;
+  --text-color-blue-100: #002548;
+
+  --fm-inter: "Inter", sans-serif;
+  --fm-ebGaramond: "EB Garamond", serif;
+}
+
+/* ESTILOS GERAIS */
+
+.center {
+  max-width: 1440px;
+  margin: auto;
+}
+
+/* HEADER START */
+
+header {
+  background: rgb(131, 76, 201, 0.1) url(../img/bg-hero.webp);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-size: cover;
+  width: 100%;
+  /* padding: 0 3%; */
+}
+
+.max-w {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  /* background-color: var(--text-color-violet-100); */
+} /* CHANGE BG-COLOR NAV */
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 2.5%;
+}
+
+.content .logo .logo-meditopia {
+  width: 160px;
+}
+
+.navigation {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navigation .navigation-btn {
+  color: var(--text-color-white);
+  font-family: var(--fm-inter);
+  font-size: var(--fs-15);
+  font-weight: var(--fw-500);
+  background-color: var(--text-color-violet-100);
+  padding: 15px;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
+.items {
+  display: flex;
+  gap: 1.5rem;
+  font-family: var(--fm-inter);
+}
+
+.items .items-list {
+  color: var(--text-color-black);
+  font-size: var(--fs-15);
+  font-weight: var(--fw-500);
+}
+
+.content-hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1440px;
+  margin: auto;
+  padding-top: 8rem;
+}
+
+.c-left-side {
+  width: 55%;
+}
+
+.c-left-side .text-main {
+  font-family: var(--fm-ebGaramond);
+  font-size: var(--fs-64);
+  font-weight: var(--fw-700);
+  line-height: 1.3;
+}
+
+.c-left-side .text-main span {
+  color: var(--text-color-violet-200);
+}
+
+.c-left-side p {
+  margin: 1.5rem 0;
+  font-size: var(--fs-16);
+  font-family: var(--fm-inter);
+  padding-inline-start: 2rem;
+}
+
+.c-left-side .btn-hover {
+  background-color: var(--text-color-violet-100);
+  display: inline-block;
+  text-align: center;
+  line-height: 2.2;
+  color: var(--text-color-white);
+  font-weight: var(--fw-700);
+  font-size: var(--fs-16);
+  font-family: var(--fm-inter);
+  border-radius: 100vmax;
+  text-transform: uppercase;
+  padding: 12px;
+  width: 295px;
+  height: 60px;
+}
+
+.c-left-side .btn-hover:hover {
+  background-color: var(--text-color-violet-400);
+}
+
+.c-right-side {
+  width: 50%;
+}
+
+.c-right-side img {
+  width: 680px;
+}
+
+.meditopia-infos {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3rem 0;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.m-icons {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.m-icons img {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.text-icon p {
+  font-size: 13px; /* ADICIONEI SOMENTE NESTE ESSE TAMANHO */
+  font-weight: var(--fw-500);
+  font-family: var(--fm-inter);
+  color: var(--text-color-gray-300);
+}
+
+.text-icon span {
+  color: var(--text-color-violet-500);
+  font-weight: var(--fw-500);
+  font-family: var(--fm-inter);
+}
+
+/* HEADER END */
+
+.c-img-peoples {
+  width: 100%;
+  position: relative;
+  border-radius: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.c-infos-company {
+  margin-top: -10.5rem;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+
+.c-company-team {
+  width: 65%;
+  padding-inline: 1.5rem;
+}
+
+.c-text-company {
+  font-size: 40px;
+  font-weight: var(--fw-800);
+  font-family: var(--fm-ebGaramond);
+  color: var(--text-color-violet-300);
+}
+
+.c-text-subtitle {
+  font-size: var(--fs-16);
+  font-family: var(--fm-inter);
+  margin: 0.8rem 0 0.5rem 0;
+  color: var(--text-color-gray-400);
+}
+
+.c-text-subtitle-2 {
+  font-size: var(--fs-15);
+  font-family: var(--fm-inter);
+  color: var(--text-color-gray-100);
+}
+
+.c-btn {
+  width: 45%;
+}
+
+.c-btn-demo {
+  padding: 16px 56px;
+  background-color: var(--text-color-violet-100);
+  border-radius: 100vmax;
+  font-size: var(--fs-16);
+  font-family: var(--fm-inter);
+  font-weight: var(--fw-500);
+  color: var(--text-color-white);
+}
+
+.c-exemple {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+}
+
+.c-exemple-text,
+span {
+  text-align: center;
+}
+
+.c-exemple-text {
+  font-size: var(--fs-48);
+  font-weight: var(--fw-700);
+  font-family: var(--fm-ebGaramond);
+  color: var(--text-color-gray-400);
+}
+
+.c-exemple-text + span {
+  font-size: var(--fs-16);
+  font-family: var(--fm-inter);
+  color: var(--text-color-violet-100);
+  margin: 1.5rem 0 2rem 0;
+}
+
+.c-tutorials {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.c-tutorial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  text-align: center;
+}
+
+.c-tutorial-text {
+  font-size: var(--fs-20);
+  font-family: var(--fm-inter);
+  color: var(--text-color-blue-100);
+  margin-top: 1rem;
+}
+
+.c-program {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.c-program-text {
+  font-size: var(--fs-48);
+  font-weight: var(--fw-700);
+  font-family: var(--fm-ebGaramond);
+  color: var(--text-color-black);
+  margin-bottom: 2.5rem;
+}
+
+.c-program-plus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-text-icon {
+  display: flex;
+  align-content: center;
+}
+
+.c-text-icon p {
+  margin-right: 3.5rem;
+  font-size: var(--fs-16);
+  font-family: var(--fm-inter);
+  color: var(--text-color-gray-400);
+}
+
+/* SECTION 1 ENDED */
+
+/* SECTION 2 */
+
+.app-meditopia {
+  display: grid;
+  grid-template-columns: repeat(2, 51%);
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+  gap: 2rem 0;
+}
+
+.text-info-left {
+  font-size: var(--fs-40);
+  font-family: var(--fm-inter);
+  margin-bottom: 1rem;
+}
+
+.mg-right {
+  margin-right: rem;
+}
+
+.text-info-subtitle {
+  font-size: var(--fs-16);
+  font-family: var(--fm-inter);
+  color: var(--text-color-gray-100);
+}
+
+.cel-meditopia-right img {
+  width: 590px;
+}
+
+/* SECTION 2 ENDED */
+
+.products-meditopia {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6rem;
+}
+
+.p-text-infos-left {
+  font-size: var(--fs-48);
+  font-weight: var(--fw-700);
+  font-family: var(--fm-ebGaramond);
+  line-height: 1;
+}
+
+.p-text-subtitle {
+  font-size: var(--fs-16);
+  font-family: var(--fm-inter);
+  color: var(--text-color-gray-100);
+  margin-top: 1.5rem;
+}
+
+.p-infos-img {
+  display: flex;
+  gap: 2rem;
+}
+
+/* SECTION 3 */
+
+.results {
+  margin-top: 4rem;
+  background-color: var(--text-color-violet-500);
+}
+
+.infos-result {
+  height: 560px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.meditopia-results {
+  width: 45%;
+}
+
+.meditopia-results h3 {
+  font-family: var(--fm-ebGaramond);
+  font-size: var(--fs-48);
+  font-weight: var(--fw-700);
+  color: var(--text-color-white);
+  line-height: 1;
+  margin-top: -2rem;
+}
+
+.meditopia-results > p:nth-of-type(1) {
+  margin: 1.5rem 0 2rem;
+  font-size: var(--fs-20);
+  color: var(--text-color-white);
+  font-weight: var(--fw-500);
+  font-family: var(--fm-inter);
+  line-height: 1.5;
+}
+
+.meditopia-results > p:nth-of-type(2) {
+  font-size: var(--fs-14);
+  font-family: var(--fm-inter);
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.5;
+}
+
+.box-percentage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.box-percentage > .percentage-1,
+.percentage-2,
+.percentage-3 {
+  background-color: var(--text-color-violet-100);
+  width: 153px;
+  height: 136px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 32px;
+  margin-bottom: 2rem;
+}
+
+.percentage-1 h2,
+.percentage-2 h2,
+.percentage-3 h2 {
+  font-size: var(--fs-48);
+  font-weight: var(--fw-700);
+  font-family: var(--fm-inter);
+  color: var(--text-color-white);
+  line-height: 1.5;
+}
+
+.percentage-1 p,
+.percentage-2 p,
+.percentage-3 p {
+  font-size: var(--fs-16);
+  color: var(--text-color-white);
+  font-family: var(--fm-inter);
+}
+
+.graphic-img {
+  max-width: 100%;
+}
+
+.graphic-img img {
+  width: 660px;
+}
+
+/* SECTION 3 ENDED */
+
+/* SECTION 4 */
+
+.assessment {
+  padding-top: 4.5rem;
+}
+
+.assessment h3,
+h4 {
+  text-align: center;
+}
+
+.assessment h3 {
+  font-family: var(--fm-ebGaramond);
+  font-size: var(--fs-48);
+  line-height: 2;
+  font-weight: var(--fw-700);
+}
+
+.assessment h4 {
+  font-family: var(--fm-inter);
+  font-weight: normal;
+  font-size: var(--fs-16);
+  color: var(--text-color-gray-100);
+}
+
+.assessment-infos {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-top: 4rem;
+  max-width: 50%;
+  margin: auto;
+}
+
+.assessment-number h2,
+.assessment-stars h2 {
+  font-size: var(--fs-48);
+  font-family: var(--fm-inter);
+  font-weight: var(--fw-700);
+}
+
+.assessment-number p,
+.assessment-stars p {
+  font-size: var(--fs-14);
+  font-family: var(--fm-inter);
+  margin-top: 0.5rem;
+  color: var(--text-color-blue-100);
+}
+
+.assessment-stars p {
+  text-decoration: underline;
+}
+
+.assessment-number span,
+.assessment-stars span {
+  color: var(--text-color-blue-100);
+  font-weight: var(--fw-700);
+  font-family: var(--fm-inter);
+}
+
+.testimonials {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 3rem;
+}
+
+.testimonials-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 518px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  padding: 1.5rem;
+}
+
+.testimonials-cards > p:nth-of-type(1) {
+  font-size: var(--fs-24);
+  font-family: var(--fm-inter);
+  color: var(--text-color-blue-100);
+  padding: 0.2rem 0;
+}
+
+.testimonials-cards > p:nth-of-type(2) {
+  font-size: var(--fs-16);
+  font-family: var(--fm-inter);
+  color: var(--text-color-gray-100);
+  padding-bottom: 0.7rem;
+}
+
+.testimonials-cards > p:nth-of-type(3) {
+  font-family: var(--fm-inter);
+  font-size: var(--fs-14);
+  color: var(--text-color-gray-200);
+  padding-top: 0.6rem;
+}
+
+.testimonials-cards p > a {
+  color: var(--text-color-gray-200);
+  text-decoration: underline;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.avatar-img img {
+  width: 48px;
+  border-radius: 50%;
+}
+
+.avatar-infos p {
+  font-size: var(--fs-16);
+  font-family: var(--fm-inter);
+  color: var(--text-color-gray-100);
+  padding-bottom: 0.3rem;
+}
+
+/* SECTION 4 ended */
+
+/* SECTION 5 */
+
+.new-peoples {
+  height: 330px;
+  background-color: var(--text-color-violet-700);
+  margin-top: 9rem;
+}
+
+.peoples-meditopia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  line-height: 1.7;
+}
+
+.peoples-meditopia p {
+  font-family: var(--fm-inter);
+  color: var(--text-color-white);
+}
+
+.peoples-meditopia h2 {
+  font-family: var(--fm-ebGaramond);
+  font-weight: var(--fw-700);
+  font-size: var(--fs-80);
+  color: var(--text-color-white);
+}
+
+.peoples-meditopia a {
+  color: var(--text-color-violet-600);
+  background-color: var(--text-color-white);
+  font-family: var(--fm-inter);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: var(--fs-14) var(--fs-40);
+  border-radius: 100vmax;
+}
+
+/* SECTION 5 ended */
+
+/* FOOTER */
+
+footer {
+  height: 520px;
+  background: linear-gradient(180deg, #6b2ebb, #834cc9);
+}
+
+.infos-end {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.infos-about-meditopia {
+  width: 50%;
+}
+
+.infos-about-meditopia p {
+  color: var(--text-color-white);
+  font-family: var(--fm-inter);
+  font-weight: 500;
+  font-size: var(--fs-17);
+  width: 40%;
+  padding: 2rem 0 2rem;
+}
+
+.meditopia-social-media img {
+  background-color: #ffffff4d;
+  padding: 0.5rem;
+  margin-right: 0.8rem;
+  border-radius: 50%;
+}
+
+.get-the-app img {
+  width: 150px;
+  margin: 2rem 0;
+}
+
+.infos-footer a {
+  font-family: var(--fm-inter);
+  font-size: var(--fs-14);
+  color: var(--text-color-white);
+  margin-right: 1rem;
+}
+
+.infos-footer select {
+  background-color: transparent;
+  border: none;
+  color: var(--text-color-white);
+}
+
+.infos-footer select option {
+  color: var(--text-color-black);
+}
+
+.acess-infos {
+  display: flex;
+  gap: 6rem;
+  width: 60%;
+}
+
+.acess-infos .company h6,
+.services h6,
+.user-smile h6 {
+  font-family: var(--fm-inter);
+  font-weight: 700;
+  font-size: var(--fs-16);
+  color: var(--text-color-white);
+}
+
+.acess-infos .company li,
+.services li,
+.user-smile li {
+  padding: 0.7rem 0;
+}
+
+.acess-infos .company li a,
+.services li a,
+.user-smile li a {
+  font-family: var(--fm-inter);
+  font-size: var(--fs-17);
+  color: var(--text-color-white);
+}
